@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Estrutura de Página</title>
+<style>
+
+#header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+#footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.left-column, .right-column {
+    width: 50%;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+</style>
+</head>
+<body>
+
+
+<div id="header">
+    <h1>Cabeçalho</h1>
+    <p>Este é o cabeçalho da página.</p>
+</div>
+
+
+<main id="main" class="clearfix">
+    <div class="left-column">
+        <h2>Coluna Esquerda</h2>
+        <p>Conteúdo da coluna esquerda.</p>
+    </div>
+    <div class="right-column">
+        <h2>Coluna Direita</h2>
+        <p>Conteúdo da coluna direita.</p>
+    </div>
+</main>
+
+
+<footer id="footer">
+    <p>Rodapé da página.</p>
+</footer>
+
+</body>
+</html>
